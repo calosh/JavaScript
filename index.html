@@ -1,0 +1,46 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id="mi_div" class="mi_clase">
+
+    </div>
+
+    <div class="mi_clase clase2">
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+
+    var div = document.getElementById("mi_div");
+    div.classList.add("nueva_clase");
+
+    var div_c = document.getElementsByClassName("mi_clase");
+    console.log(div_c);
+
+    var div_t = document.getElementsByTagName("div");
+    console.log(div_t);
+
+    // Devuelve el primer elemento encontrado
+    // por elemento, clase o id
+    var div_s = document.querySelector(".clase2");
+    console.log(div_s);
+    // Devuelve todos los elementos encontrados
+    var div_sa = document.querySelector(".clase2");
+    console.log(div_sa);
+
+    // ejemplo jquery
+    function $(selector) {
+      return document.querySelector(selector);
+    }
+
+    console.log("Jquery");
+    console.log($(".clase2"));
+
+  </script>
+</html>
