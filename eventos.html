@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <button type="button" name="button" onclick="clic()">Abrir alert</button>
+    <button id="boton" type="button" name="button">Abrir alert 2</button>
+
+    <div id="mi_div">
+      <button id="mi_boton" type="button" name="button">Abrir alert 2</button>
+    </div>
+
+
+  </body>
+
+  <script type="text/javascript">
+  function clic() {
+    alert("Hola");
+  }
+
+  function clicDiv() {
+    alert("Div");
+  }
+
+  function clicButton() {
+    alert("Button");
+  }
+
+  document.getElementById("boton").addEventListener("click", clic, false);
+
+  document.getElementById("mi_div").addEventListener("click", clicDiv, true);
+  document.getElementById("mi_boton").addEventListener("click", clicButton, false);
+
+
+  </script>
+</html>
