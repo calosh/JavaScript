@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+
+  <script type="text/javascript">
+    var arreglo = [1, "2", {}, []];
+    console.log(arreglo);
+    console.log(arreglo.push(10)); // inserta al final
+    console.log(arreglo.unshift(0)); // inserta al inicio
+    console.log(arreglo.length);
+    console.log(arreglo[2]);
+    console.log(arreglo.pop(10)); // elimina al final
+    console.log(arreglo.shift(0)); // elimina al inicio
+
+    var l = arreglo.length;
+
+    console.log("For");
+    for(var i=0; i<l; i++){
+      console.log(arreglo[i]);
+    }
+
+  </script>
+</html>
